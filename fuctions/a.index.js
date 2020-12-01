@@ -23,7 +23,7 @@ const setUIAlerts = (data) => {
         const li=`
          <div class="a-card">
          <div class="a-info"> 
-         <span class="a-date"> ${datepost}</span>
+         <span class="a-date"> 24 Oct 2020    </span>
            <h3>${alert.name}</h3>
            <p>${alert.description}</p>
            <span class="location">${alert.location}</span>
