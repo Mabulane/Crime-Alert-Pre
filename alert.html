@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Now</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+  <nav class="top-Nav">
+    
+    <span id="menu">&#9776; C-alert</span>
+
+     <li><a  id="log-user-out" class="loggedIN" style="display: none;">Sign Out</a></li>
+  </nav>
+
+  <nav id="sideMenu" class="sidenav">
+   
+    <ul>
+      <li><h2>Alert Now</h2></li>
+      <a href="#" class="closebtn" id="closeNav">&times;</a>
+      <li><a href="index.html" class="loggedIN" style="display: none;" >Home</a></li>
+      <li><a href="notification.html"    class="loggg">My Alerts</a></li>
+      
+      
+      <li><a href="logout" id="log-user-out"class="loggedIN" style="display: none;">Logout</a></li>
+</ul>
+</nav>
+  <br><br><br><br>
+    <div class="createalert">
+      <form class="createalert" id="create-alert">
+        <label for="myBrowser">Choose Alert list:</label><br>
+        <input list="browsers" id="altName" name="myBrowser"/>
+        <datalist id="browsers">
+          <option value="Murder">
+          <option value="Rape">
+          <option value="Car theft">
+          <option value="Mag">
+          <option value="Brekin">
+          <option value="Vandelisim">
+        </datalist><br>
+        <label for="">Discription</label><br>
+        <input type="text" name="" id="disc"><br>
+        <label for="">Location</label><br>
+        <input type="text" name="" id="location"><br>
+         
+        
+        <botton type="file" name="media" >  <botton id="selectFile"></botton>
+
+        <input type="submit" value="submit" id="submit" class="btnA">
+      </form>
+    </div>
+    <div class="popUp" style="display: none;">
+      <div class="popUp-content" ><span>Alert succefully</span></div>
+    </div> 
+<br>
+    <div id="map"></div>
+    
+    <br><br><br><br><br><br>
+  <nav class="bottom-Nav">
+    <ul class="">
+      <li><a id="Home-id"      href="index.html"><div class="h-icon"><i class="fa fa-home" aria-hidden="true" ></i></div>       <div class="a-name">Home</div></a></li>
+      <li><a id="discover-id"  href="heatmap.html"><div class="h-icon"><i class="fa fa-users" aria-hidden="true"></i></div>        <div class="a-name">Stats</div></a></li>
+      <li><a id="search-id"    href="search.html"><div class="h-icon"><i class="fa fa-search" aria-hidden="true"></i></div>       <div class="a-name">Search</div></a></li>
+      <li><a id="bookmark-id"  href="notification.html"><div class="h-icon"><i class="fa fa-bookmark-o" aria-hidden="true"></i></div>   <div class="a-name">My Alerts</div>    </a></li>
+      <li><a id="profile-id"   href="profile.html"><div class="h-icon"><i class="fa fa-user-o" aria-hidden="true"></i></div>       <div class="a-name">Profile</div></a></li>
+    </ul> 
+  </nav>
+
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="./fuctions/app.js"></script>
+    <script src="./fuctions/react.js"></script>
+    <script src="./fuctions/c.Alerts.js"></script>
+      <!-- <script>
+          var media,mediaUrl;
+          var files=[]
+          var reader= new FileReader();
+          document.getElementById('selectFile');
+          
+        </script>
+    <script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+      var map, infoWindow;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -24.397, lng: 150.644},
+          zoom: 5
+        });}
+      </script>
+      
+      
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlx1QJrb5KcYfM-NS-Pco7BV154knNlUY&callback=initMap" async defer></script>
+    -->
+
+</body>
+</html>
